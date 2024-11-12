@@ -50,9 +50,9 @@ CREATE TABLE livro (
     id_livro INT PRIMARY KEY AUTO_INCREMENT,
     titulo VARCHAR(150) NOT NULL,
     ano_publicacao YEAR,
-    FOREING KEY(id_editora) REFERENCES editora(id_editora),
-    FOREING KEY(id_autor) REFERENCES autor(id_autor),
-    FOREING KEY(id_assunto) REFERENCE assunto(id_assunto)
+    FOREIGN KEY(id_editora) REFERENCES editora(id_editora),
+    FOREIGN KEY(id_autor) REFERENCES autor(id_autor),
+    FOREIGN KEY(id_assunto) REFERENCE assunto(id_assunto)
 );
 ```
 #### 1.6 Criando uma tabela EXTRA
