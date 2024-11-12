@@ -62,8 +62,6 @@ CREATE TABLE livro (
     FOREIGN KEY(editora) REFERENCES editora(id_editora),
     FOREIGN KEY(autora) REFERENCES autor(id_autor),
     FOREIGN KEY(assunto) REFERENCES assunto(id_assunto)
-);
-```
 
 #### 1.6 Criando a tabela 'extra'
 
